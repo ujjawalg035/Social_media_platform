@@ -1,0 +1,62 @@
+.Post{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: var(--cardColor);
+    border-radius: 1rem;
+    gap: 1rem;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.post-user-info {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.post-user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.post-user-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.post-user-name {
+    font-weight: 600;
+    color: var(--textColor);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.post-user-name:hover {
+    text-decoration: underline;
+}
+
+.post-time {
+    font-size: 0.75rem;
+    color: var(--gray);
+}
+
+.Post > img{
+    width: 100%;
+    max-height: 20rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.postReact{
+   display: flex;
+   align-items: flex-start;
+   gap: 1.5rem;
+}

@@ -1,0 +1,167 @@
+.followers-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.followers-modal {
+    background: white;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    max-height: 80vh;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.followers-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #e1e8ed;
+}
+
+.followers-modal-header h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #666;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background-color 0.2s;
+}
+
+.close-btn:hover {
+    background-color: #f0f0f0;
+}
+
+.followers-list {
+    max-height: 60vh;
+    overflow-y: auto;
+    padding: 0;
+}
+
+.loading, .no-users {
+    padding: 40px 20px;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+}
+
+.follower-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    border-bottom: 1px solid #f0f0f0;
+    transition: background-color 0.2s;
+}
+
+.follower-item:hover {
+    background-color: #f8f9fa;
+}
+
+.follower-item:last-child {
+    border-bottom: none;
+}
+
+.follower-info {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.follower-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 12px;
+}
+
+.follower-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.follower-name {
+    font-weight: 600;
+    color: #1a1a1a;
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+
+.follower-about {
+    color: #666;
+    font-size: 12px;
+    line-height: 1.3;
+}
+
+.follow-btn {
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: none;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    min-width: 80px;
+}
+
+.follow-btn.follow {
+    background-color: #1da1f2;
+    color: white;
+}
+
+.follow-btn.follow:hover {
+    background-color: #1a91da;
+}
+
+.follow-btn.unfollow {
+    background-color: transparent;
+    color: #1da1f2;
+    border: 1px solid #1da1f2;
+}
+
+.follow-btn.unfollow:hover {
+    background-color: #e8f5fd;
+}
+
+/* Scrollbar styling */
+.followers-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+.followers-list::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.followers-list::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 3px;
+}
+
+.followers-list::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+} 
